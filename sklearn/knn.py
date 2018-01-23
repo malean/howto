@@ -24,7 +24,7 @@ knn.fit(iris_X_train, iris_y_train)
 iris_y_predicted = knn.predict(iris_X_test)
 
 # Compute prediction rate
-nerrors = abs(sum(iris_y_test-iris_y_predicted))
-prediction_rate = 1-nerrors/float(ntest)
+ngood = sum(iris_y_test == iris_y_predicted)
+prediction_rate = ngood/float(ntest)
 
 print("prediction rate: ", prediction_rate)
