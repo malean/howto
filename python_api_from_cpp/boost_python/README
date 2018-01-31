@@ -1,0 +1,7 @@
+mkdir build
+cd build
+cmake ..
+make
+python
+import greet_ext
+greet_ext.greet()

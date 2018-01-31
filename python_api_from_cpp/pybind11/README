@@ -1,0 +1,4 @@
+mkdir build
+cd build
+cmake -D PYBIND11_DIR=[where pybind11 is installed] ..
+make

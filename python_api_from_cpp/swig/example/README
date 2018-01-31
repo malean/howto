@@ -1,0 +1,23 @@
+
+
+1. With CMake
+
+mkdir build
+cd build
+cmake ..
+make
+
+
+2. Manually:
+
+~/Logiciels/swig/3.0.12/bin/swig -python example.i
+gcc -c example.c example_wrap.c -I/usr/include/python3.5m -fPIC
+ld -shared example.o example_wrap.o -o _example.so 
+
+3. Usage
+
+python3
+import example
+example.fact(5)
+
+
