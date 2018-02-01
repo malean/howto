@@ -16,4 +16,10 @@
      time(&ltime);
      return ctime(&ltime);
  }
+
+ struct Foo
+ {
+   int num;
+   double val;
+ };
  

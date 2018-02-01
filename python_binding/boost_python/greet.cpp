@@ -4,3 +4,4 @@ char const* greet( )
 {
     return "Hello world";
 }
+

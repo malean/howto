@@ -5,4 +5,5 @@ BOOST_PYTHON_MODULE(greet_ext)
 {
     using namespace boost::python;
     def( "greet", greet );
+    class_<Foo>("Foo");
 }
