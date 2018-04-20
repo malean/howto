@@ -13,6 +13,8 @@ BaseList get_list()
   return list;
 }
 
+void print_list(BaseList const & list)
+{ std::cout << list.to_string() << std::endl; }
 
 
 class PyBase : public Base 
@@ -61,4 +63,5 @@ PYBIND11_MODULE(abstract, m)
     ;
   
   m.def("get_list", &get_list);
+  m.def("print_list", &print_list);
 }

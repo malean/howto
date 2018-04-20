@@ -74,5 +74,6 @@ class BaseList
 
 
 BaseList get_list();
+void print_list(BaseList const &);
 
 #endif
